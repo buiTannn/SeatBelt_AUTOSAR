@@ -15,6 +15,7 @@ Dự án này sử dụng MATLAB Simulink để thiết kế và triển khai h�
 
 ### Composition
 Cả hai SWC được bao bọc bởi một composition, tạo thành một unit hoàn chỉnh cho hệ thống seatbelt.
+<img width="848" height="611" alt="image" src="https://github.com/user-attachments/assets/7595d0cd-6301-4709-bba7-c01549eaefa8" />
 
 ### AUTOSAR Services
 - **NVM (Non-Volatile Memory)**: 
@@ -26,6 +27,7 @@ Cả hai SWC được bao bọc bởi một composition, tạo thành một unit
   - Service calls: `SetEventStatus`, `GetEventFailed`
 
 ## Giao diện (Ports)
+<img width="999" height="676" alt="image" src="https://github.com/user-attachments/assets/5dc7cf80-ab34-4d8c-8f74-b6794f32f597" />
 
 ### SeatBelt SWC
 
