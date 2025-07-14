@@ -1,0 +1,16 @@
+This file is the manifest for the generated code from model 'SeatBelt'.
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt.c
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt.h
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_private.h
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_types.h
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\slprj\autosar\_sharedutils\MWDSP_EPH_F_B.h
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\slprj\autosar\_sharedutils\rt_roundd.h
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_component.arxml
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_datatype.arxml
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_implementation.arxml
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_interface.arxml
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\stub\SeatBelt_external_interface.arxml
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\slprj\autosar\_sharedutils\buildInfo.mat
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\slprj\autosar\_sharedutils\rt_roundd.c
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\slprj\autosar\_sharedutils\MWDSP_EPH_F_B.c
+C:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\SeatBelt_manifest.txt

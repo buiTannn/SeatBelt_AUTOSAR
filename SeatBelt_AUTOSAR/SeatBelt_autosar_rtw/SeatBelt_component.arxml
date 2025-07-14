@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model SeatBelt
+Model version                : 1.41
+Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
+XML source code generated on : Mon Jul 14 23:49:21 2025
+Model Checksum               : 1645260583 3918482343 1834855121 1514918145
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="e69ea561-0b58-5304-2cc6-837b5399b82a">
+                    <SHORT-NAME>SetBelt</SHORT-NAME>
+                    <PORTS>
+                        <R-PORT-PROTOTYPE UUID="2fe44840-ccea-5acf-0fef-278fb8acee57">
+                            <SHORT-NAME>Speed</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VehicleSpeedInterface/Speed</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_uint16</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VehicleSpeedInterface</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="941aa8d6-bb36-5e0b-4579-823b33404099">
+                            <SHORT-NAME>SeatBeltFasten</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SeatBeltInterface/SeatBeltFasten</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/SeatBeltInterface</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="bc2ea107-8dbf-57f3-855c-52f61ba8f6ec">
+                            <SHORT-NAME>Key</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IgnitionKeyInterface/Key</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <TEXT-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_enState_IgnitionKey</SHORT-LABEL>
+                                            <VALUE>OFF</VALUE>
+                                        </TEXT-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IgnitionKeyInterface</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="c68b07e6-2908-56a5-befd-681390e7c83d">
+                            <SHORT-NAME>SeatbeltIcon</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SeatbeltIcon/SeatbeltIcon</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/SeatbeltIcon</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="bbcb091b-02f8-5d3e-1399-ba91328cdc44">
+                            <SHORT-NAME>SeatbeltFastenError</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SeatbeltFastenError/SeatbeltFastenError</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/SeatbeltFastenError</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="741e71f6-af20-5e6b-53f7-cba7e70c0f59">
+                            <SHORT-NAME>SpeedStuckLow</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Interfaces/DiagnosticMonitor</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="fbc348da-85a4-55c8-b1de-9b82354cc4c1">
+                            <SHORT-NAME>SpeedStuckHigh</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Interfaces/DiagnosticMonitor</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="b2c7b242-f4eb-5291-ded4-db25a4e899ab">
+                            <SHORT-NAME>IgnitionKeySwitchCount</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Interfaces/NvMService</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="bbfd8520-aa46-5f80-8de1-278e8a346b14">
+                            <SHORT-NAME>demo_IB</SHORT-NAME>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="2fdf547b-79ad-5f4b-61e1-bd962d696df6">
+                                    <SHORT-NAME>Event_demo_Step</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/SetBelt/demo_IB/demo_Step</START-ON-EVENT-REF>
+                                    <PERIOD>1</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="86eb9eda-7a9a-5473-76d2-9a07d364fbcf">
+                                    <SHORT-NAME>demo_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SERVER-CALL-POINTS>
+                                        <ASYNCHRONOUS-SERVER-CALL-POINT UUID="3432c086-a41e-525c-7c71-5e15affce216">
+                                            <SHORT-NAME>SC_IgnitionKeySwitchCount_ReadBlock</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/IgnitionKeySwitchCount</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Interfaces/NvMService/ReadBlock</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1</TIMEOUT>
+                                        </ASYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>demo_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="5bb2e56c-26fc-531a-e93f-f0638317aa83">
+                                    <SHORT-NAME>demo_Step</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="f55d5e7b-c47f-51aa-25a4-8b0e17c7e765">
+                                            <SHORT-NAME>IN_Key_Key</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/Key</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IgnitionKeyInterface/Key</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="e6bb38ad-a2a4-58c5-103c-dc1f9f48c6d8">
+                                            <SHORT-NAME>IN_SeatBeltFasten_SeatBeltFasten</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/SeatBeltFasten</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SeatBeltInterface/SeatBeltFasten</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="ce675cd7-f828-559b-e112-b7a87695a568">
+                                            <SHORT-NAME>IN_Speed_Speed</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/Speed</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VehicleSpeedInterface/Speed</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="cd33b528-0b4e-5fc1-65d3-e5e059a546f5">
+                                            <SHORT-NAME>OUT_SeatbeltIcon_SeatbeltIcon</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/SetBelt/SeatbeltIcon</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SeatbeltIcon/SeatbeltIcon</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="4260991b-24e9-5048-9f24-892b07dc4842">
+                                            <SHORT-NAME>OUT_SeatbeltFastenError_SeatbeltFastenError</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/SetBelt/SeatbeltFastenError</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SeatbeltFastenError/SeatbeltFastenError</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <SERVER-CALL-POINTS>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="ea4fe523-e977-5ce6-1b1b-b078c84ffc94">
+                                            <SHORT-NAME>SC_SpeedStuckHigh_SetEventStatus</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/SpeedStuckHigh</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Interfaces/DiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1.0E-06</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="1c603bf9-c66f-57a1-93c4-c6c0c56f98b1">
+                                            <SHORT-NAME>SC_SpeedStuckLow_SetEventStatus</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/SpeedStuckLow</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Interfaces/DiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1.0E-06</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                        <ASYNCHRONOUS-SERVER-CALL-POINT UUID="c157eacf-607f-5110-7894-47740ce55ec6">
+                                            <SHORT-NAME>SC_IgnitionKeySwitchCount_WriteBlock</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/IgnitionKeySwitchCount</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Interfaces/NvMService/WriteBlock</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1</TIMEOUT>
+                                        </ASYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>demo_Step</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="0bf00426-4bad-5864-3109-1c36f971d35f">
+                                    <SHORT-NAME>demo_Terminate</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SERVER-CALL-POINTS>
+                                        <ASYNCHRONOUS-SERVER-CALL-POINT UUID="9bdbdff6-5c2d-5fd8-f327-7b9e3bb17001">
+                                            <SHORT-NAME>SC_IgnitionKeySwitchCount_WriteBlock</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SetBelt/IgnitionKeySwitchCount</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Interfaces/NvMService/WriteBlock</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1</TIMEOUT>
+                                        </ASYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>demo_Terminate</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

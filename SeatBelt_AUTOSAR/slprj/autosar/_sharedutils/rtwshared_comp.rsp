@@ -1,0 +1,16 @@
+﻿-IC:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR
+-IC:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\slprj\autosar\_sharedutils
+-ID:\MATLAB\toolbox\coder\autosar\rte
+-ID:\MATLAB\toolbox\coder\autosar\rte\lst
+-IC:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SetBelt_autosar_rtw\stub
+-ID:\MATLAB\extern\include
+-ID:\MATLAB\simulink\include
+-ID:\MATLAB\rtw\c\src
+-ID:\MATLAB\rtw\c\src\ext_mode\common
+-ID:\MATLAB\rtw\c\ert
+-IC:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\GetStatus_autosar_rtw\stub
+-ID:\MATLAB\toolbox\dsp\dsp\include
+-ID:\MATLAB\toolbox\dsp\dsp\extern\src\export\include\src
+-ID:\MATLAB\toolbox\dsp\dsp\extern\src\export\include
+-ID:\MATLAB\toolbox\shared\dsp\vision\matlab\include
+-IC:\Users\buiqu\OneDrive\Desktop\SeatBelt_AUTOSAR\SeatBelt_autosar_rtw\stub
