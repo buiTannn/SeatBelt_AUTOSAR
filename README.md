@@ -32,13 +32,13 @@ Cả hai SWC được bao bọc bởi một composition, tạo thành một unit
 ### SeatBelt SWC
 
 #### Input Ports (Inport)
-- **SeatBeltFasten**: Trạng thái dây an toàn (boolean) - đã thắt hay chưa
-- **Speed**: Tốc độ hiện tại của xe (uint16) - đơn vị km/h
-- **Key**: Trạng thái khóa điện (enState_IgnitionKey) - OFF/ON/CRANK
+- **SeatBeltFasten**: Trạng thái dây an toàn 
+- **Speed**: Tốc độ hiện tại của xe (uint16) 
+- **Key**: Trạng thái khóa điện
 
 #### Output Ports (Outport)
-- **SeatbeltIcon**: Tín hiệu hiển thị biểu tượng dây an toàn (boolean)
-- **SeatbeltFastenError**: Tín hiệu lỗi dây an toàn (boolean)
+- **SeatbeltIcon**: Tín hiệu hiển thị biểu tượng dây an toàn
+- **SeatbeltFastenError**: Tín hiệu lỗi dây an toàn
 
 ### GetStatus SWC
 
@@ -46,8 +46,8 @@ Cả hai SWC được bao bọc bởi một composition, tạo thành một unit
 - Không có input ports trực tiếp (sử dụng service calls)
 
 #### Output Ports (Outport)
-- **SpeedStuckHigh_GetFailedStatus**: Trạng thái lỗi tốc độ bị kẹt cao (boolean)
-- **SpeedStuckLow_GetFailedStatus**: Trạng thái lỗi tốc độ bị kẹt thấp (boolean)
+- **SpeedStuckHigh_GetFailedStatus**: Trạng thái lỗi bị kẹt ở tốc độ cao 
+- **SpeedStuckLow_GetFailedStatus**: Trạng thái lỗi bị kẹt ở tốc độ thấp
 
 ## Công nghệ sử dụng
 - **MATLAB Simulink**: Môi trường phát triển chính
