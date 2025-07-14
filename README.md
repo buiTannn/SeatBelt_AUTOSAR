@@ -1,4 +1,3 @@
-# SeatBelt_AUTOSAR
 # Seatbelt AUTOSAR System
 
 ## Tổng quan
