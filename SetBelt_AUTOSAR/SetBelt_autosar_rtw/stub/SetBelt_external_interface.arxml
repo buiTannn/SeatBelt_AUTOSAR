@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model SetBelt
+Model version                : 1.40
+Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
+XML source code generated on : Mon Jul 14 22:59:32 2025
+Model Checksum               : 3747105115 1254694433 264438431 2402850430
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Interfaces</SHORT-NAME>
+            <ELEMENTS>
+                <CLIENT-SERVER-INTERFACE UUID="89E0F11F-93F5-487E-8594-75FEEF4E2A90">
+                    <SHORT-NAME>NvMService</SHORT-NAME>
+                    <IS-SERVICE>true</IS-SERVICE>
+                    <OPERATIONS>
+                        <CLIENT-SERVER-OPERATION UUID="FF02D963-3200-475C-8F25-9976F934062A">
+                            <SHORT-NAME>EraseNvBlock</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="795B9ACE-ECC9-4102-943F-D2CA0BC7E3ED">
+                            <SHORT-NAME>GetDataIndex</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="D15A0C99-93C6-4AF9-81F8-B647F61EB02E">
+                                    <SHORT-NAME>DataIndexPtr</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                                    <DIRECTION>OUT</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="36C974FB-6331-46D1-BDDD-B7E92DEC1B76">
+                            <SHORT-NAME>GetErrorStatus</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="1BF1A5D6-0A21-4245-8364-9666EECB3900">
+                                    <SHORT-NAME>RequestResultPtr</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/NvM_RequestResultType</TYPE-TREF>
+                                    <DIRECTION>OUT</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="C1D7803E-A070-470E-AD45-EBB8409957B7">
+                            <SHORT-NAME>InvalidateNvBlock</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="054FAC86-A8F9-4153-ABA4-A3E643FBCD53">
+                            <SHORT-NAME>ReadBlock</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="F929AA98-E923-4E78-8D8B-F84B84690FD1">
+                                    <SHORT-NAME>NvM_DstPtr</SHORT-NAME>
+                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/dtRef_VOID</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="F5E72C6A-AAF7-4B55-AFB4-8EB4F4C8801A">
+                            <SHORT-NAME>ReadPRAMBlock</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="82F5001B-FD9D-4B2E-A713-9D1CB0AD6723">
+                            <SHORT-NAME>RestoreBlockDefaults</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="72204BCE-28C0-4108-A7AE-C6DE7BDB1B02">
+                                    <SHORT-NAME>NvM_DestPtr</SHORT-NAME>
+                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/dtRef_VOID</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="1603CC13-A3EA-43E5-80D8-92E55ED1CE63">
+                            <SHORT-NAME>RestorePRAMBlockDefaults</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="4892CD20-331E-48FB-ACA4-B2D9BAF49245">
+                            <SHORT-NAME>SetDataIndex</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="891B4ECE-246C-43E9-BD97-03826BDA02BC">
+                                    <SHORT-NAME>DataIndex</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="FCFD522E-2683-488D-9CCF-D806294E8674">
+                            <SHORT-NAME>SetRamBlockStatus</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="303B04B1-7EFD-41B0-8EEC-630D7F9609BA">
+                                    <SHORT-NAME>BlockChanged</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="0D0751CC-CE58-4622-8845-40095FA1D748">
+                            <SHORT-NAME>WriteBlock</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="E28E5C72-5720-443B-ACD8-F978D8CD86FD">
+                                    <SHORT-NAME>SrcPtr</SHORT-NAME>
+                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/dtRef_const_VOID</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="A7FCEBAE-EC78-4D7F-B023-0501BFC701C6">
+                            <SHORT-NAME>WritePRAMBlock</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/NvMService/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                    </OPERATIONS>
+                    <POSSIBLE-ERRORS>
+                        <APPLICATION-ERROR UUID="A7AFD599-1333-460B-8602-E5B8D38BC232">
+                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                            <ERROR-CODE>1</ERROR-CODE>
+                        </APPLICATION-ERROR>
+                        <APPLICATION-ERROR UUID="5DA42714-786B-4D1D-88D1-7F6F121062BD">
+                            <SHORT-NAME>E_OK</SHORT-NAME>
+                            <ERROR-CODE>0</ERROR-CODE>
+                        </APPLICATION-ERROR>
+                    </POSSIBLE-ERRORS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="F5D1A729-A0DA-487A-976D-6EDABC2DB799">
+                    <SHORT-NAME>DiagnosticMonitor</SHORT-NAME>
+                    <IS-SERVICE>true</IS-SERVICE>
+                    <OPERATIONS>
+                        <CLIENT-SERVER-OPERATION UUID="6BBB7DDF-1351-48B9-AD91-9DED1E4F0C80">
+                            <SHORT-NAME>ClearPrestoredFreezeFrame</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="6F0C7D5A-97E4-40C7-B52E-91269A6AA46B">
+                            <SHORT-NAME>PrestoreFreezeFrame</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="266A9C2F-86D5-4E85-9DF3-ACBF9B993560">
+                            <SHORT-NAME>ResetEventDebounceStatus</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="D01C6D27-2FB2-40AB-B64D-BCCDBE057FFE">
+                                    <SHORT-NAME>DebounceResetStatus</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Dem_DebounceResetStatusType</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="FBF928FA-705C-4D1C-B80A-7109592FD74F">
+                            <SHORT-NAME>ResetEventStatus</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="94D6561F-E413-4C42-9CBA-14EC1C14AE90">
+                            <SHORT-NAME>SetEventDisabled</SHORT-NAME>
+                            <ARGUMENTS/>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                        <CLIENT-SERVER-OPERATION UUID="D76C660C-0410-48B0-BB53-303EB9919F70">
+                            <SHORT-NAME>SetEventStatus</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="2EDA22A5-19B8-4CAD-BE2C-22409B85DC09">
+                                    <SHORT-NAME>EventStatus</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Dem_EventStatusType</TYPE-TREF>
+                                    <DIRECTION>IN</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                            <POSSIBLE-ERROR-REFS>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Interfaces/DiagnosticMonitor/E_OK</POSSIBLE-ERROR-REF>
+                            </POSSIBLE-ERROR-REFS>
+                        </CLIENT-SERVER-OPERATION>
+                    </OPERATIONS>
+                    <POSSIBLE-ERRORS>
+                        <APPLICATION-ERROR UUID="B07DA8B2-CD5A-42DB-B767-11D2CFB01984">
+                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                            <ERROR-CODE>1</ERROR-CODE>
+                        </APPLICATION-ERROR>
+                        <APPLICATION-ERROR UUID="89FC9A7F-3811-4726-9728-2AA6C8FE62F3">
+                            <SHORT-NAME>E_OK</SHORT-NAME>
+                            <ERROR-CODE>0</ERROR-CODE>
+                        </APPLICATION-ERROR>
+                    </POSSIBLE-ERRORS>
+                </CLIENT-SERVER-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
