@@ -1,60 +1,62 @@
 # Seatbelt AUTOSAR System
 
-## Tổng quan
-Dự án này sử dụng MATLAB Simulink để thiết kế và triển khai hệ thống seatbelt (dây an toàn) theo tiêu chuẩn AUTOSAR. Hệ thống được phát triển với kiến trúc component-based, sử dụng các service tiêu chuẩn AUTOSAR.
+## Overview
+This project uses MATLAB Simulink to design and implement a seatbelt system according to AUTOSAR standards. The system is developed with component-based architecture, using standard AUTOSAR services.
 
-## Kiến trúc hệ thống
+## System Architecture
 
 ### AUTOSAR Software Components (SWC)
-- **SeatBelt SWC**: Component chính xử lý logic dây an toàn, bao gồm:
-  - Giám sát trạng thái dây an toàn
-  - Tính toán tốc độ trung bình
-  - Đếm số lần chuyển trạng thái khóa điện
-  - Xử lý cảnh báo và lỗi
-- **GetStatus SWC**: Component lấy thông tin trạng thái chẩn đoán từ DEM service
+- **SeatBelt SWC**: Main component handling seatbelt logic, including:
+  - Monitor seatbelt status
+  - Calculate average speed
+  - Count ignition key state transitions
+  - Handle warnings and errors
+- **GetStatus SWC**: Component retrieving diagnostic status information from DEM service
 
 ### Composition
-Cả hai SWC được bao bọc bởi một composition, tạo thành một unit hoàn chỉnh cho hệ thống seatbelt.
+Both SWCs are wrapped by a composition, forming a complete unit for the seatbelt system.
+
 <img width="848" height="611" alt="image" src="https://github.com/user-attachments/assets/7595d0cd-6301-4709-bba7-c01549eaefa8" />
 
 ### AUTOSAR Services
 - **NVM (Non-Volatile Memory)**: 
-  - Lưu trữ số lần chuyển trạng thái khóa điện (`IgnitionKeySwitchCount`)
+  - Store ignition key state transition count (`IgnitionKeySwitchCount`)
   - Service calls: `ReadBlock`, `WriteBlock`
 - **DEM (Diagnostic Event Manager)**: 
-  - Quản lý các sự kiện chẩn đoán lỗi tốc độ
+  - Manage speed fault diagnostic events
   - Events: `SpeedStuckHigh`, `SpeedStuckLow`
   - Service calls: `SetEventStatus`, `GetEventFailed`
 
-## Giao diện (Ports)
+## Interface (Ports)
+
 <img width="999" height="676" alt="image" src="https://github.com/user-attachments/assets/5dc7cf80-ab34-4d8c-8f74-b6794f32f597" />
 
 ### SeatBelt SWC
 
 #### Input Ports (Inport)
-- **SeatBeltFasten**: Trạng thái dây an toàn 
-- **Speed**: Tốc độ hiện tại của xe (uint16) 
-- **Key**: Trạng thái khóa điện
+- **SeatBeltFasten**: Seatbelt status
+- **Speed**: Current vehicle speed (uint16) 
+- **Key**: Ignition key state - OFF/ON/CRANK
 
 #### Output Ports (Outport)
-- **SeatbeltIcon**: Tín hiệu hiển thị biểu tượng dây an toàn
-- **SeatbeltFastenError**: Tín hiệu lỗi dây an toàn
+- **SeatbeltIcon**: Signal to display seatbelt icon 
+- **SeatbeltFastenError**: Seatbelt error signal 
 
 ### GetStatus SWC
 
 #### Input Ports (Inport)
-- Không có input ports trực tiếp (sử dụng service calls)
+- No direct input ports (using service calls)
 
 #### Output Ports (Outport)
-- **SpeedStuckHigh_GetFailedStatus**: Trạng thái lỗi bị kẹt ở tốc độ cao 
-- **SpeedStuckLow_GetFailedStatus**: Trạng thái lỗi bị kẹt ở tốc độ thấp
+- **SpeedStuckHigh_GetFailedStatus**: High speed stuck fault status 
+- **SpeedStuckLow_GetFailedStatus**: Low speed stuck fault status
 
-## Công nghệ sử dụng
-- **MATLAB Simulink**: Môi trường phát triển chính
-- **AUTOSAR Blockset**: Toolbox cho thiết kế AUTOSAR
-- **Embedded Coder**: Để sinh code C/C++
+## Technologies Used
+- **MATLAB Simulink**: Main development environment
+- **AUTOSAR Blockset**: Toolbox for AUTOSAR design
+- **Embedded Coder**: For C/C++ code generation
 
-## Yêu cầu hệ thống
+## System Requirements
 - MATLAB R2024a
 - Simulink
 - AUTOSAR Blockset
